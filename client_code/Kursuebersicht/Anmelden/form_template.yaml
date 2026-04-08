@@ -1,0 +1,30 @@
+components:
+- components:
+  - components:
+    - name: repeating_panel_mitglieder
+      properties: {item_template: Kursuebersicht.Anmelden.RowTemplate2}
+      type: RepeatingPanel
+    layout_properties: {grid_position: 'SPOQAL,GYEWWC'}
+    name: data_grid_mitglieder
+    properties:
+      columns:
+      - {data_key: mitglied, id: JKSDUP, title: Mitglied}
+      - {data_key: anmelden, id: VJQQOR, title: Anmelden}
+    type: DataGrid
+  layout_properties: {slot: default}
+  name: content_panel
+  properties: {}
+  type: ColumnPanel
+- layout_properties: {slot: nav-right}
+  name: navbar_links
+  properties: {}
+  type: FlowPanel
+- event_bindings: {}
+  layout_properties: {slot: title}
+  name: button_back
+  properties: {text: Zurück}
+  type: Button
+container:
+  properties: {html: '@theme:standard-page.html'}
+  type: HtmlTemplate
+is_package: true
